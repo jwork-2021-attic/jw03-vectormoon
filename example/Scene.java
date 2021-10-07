@@ -26,15 +26,15 @@ public class Scene {
 
         // Class c = loader.loadClass("example.BubbleSorter");
 
-        SteganographyClassLoader loader = new SteganographyClassLoader(
-                new URL("file:/Users/vectormoon/Documents/Code/Java/NJU/jw03-vectormoon/example.SelectionSorter.png"));
-
-        Class c = loader.loadClass("example.SelectionSorter");
-
         // SteganographyClassLoader loader = new SteganographyClassLoader(
-        //         new URL("https://cdn.njuics.cn/example.BubbleSorter.png"));
+        //         new URL("file:/Users/vectormoon/Documents/Code/Java/NJU/jw03-vectormoon/example.SelectionSorter.png"));
 
-        // Class c = loader.loadClass("example.BubbleSorter");
+        // Class c = loader.loadClass("example.SelectionSorter");
+
+        SteganographyClassLoader loader = new SteganographyClassLoader(
+                new URL("file:/Users/vectormoon/Documents/Code/Java/NJU/jw03-vectormoon/example.InsertionSorter.png"));
+
+        Class c = loader.loadClass("example.InsertionSorter");
 
         Sorter sorter = (Sorter) c.newInstance();
 
